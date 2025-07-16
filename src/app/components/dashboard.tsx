@@ -119,19 +119,19 @@ export default function Dashboard() {
   useEffect(() => {
     // --- PERUBAHAN UTAMA DI SINI ---
     // Kita gunakan URL koneksi aman (WSS) secara eksplisit dengan protocol.
-    const brokerUrl = "567cd4585c3644309a303872a6601441.s1.eu.hivemq.cloud";
+    const brokerUrl = "";
     const port = 8884;
     const topic = "iot_dashboard";
-    const username = "arduinoproject";
-    const password = "Arduino69#";
+    const username = "";
+    const password = "";
 
     // URL lengkap dengan protocol WSS
     const url = `wss://${brokerUrl}:${port}/mqtt`;
 
     const options = {
       clientId: `iot_dashboard_${Math.random().toString(16).substr(2, 8)}`,
-      username: "arduinoproject",
-      password: "Arduino69#",
+      username: "",
+      password: "",
       clean: true,
       reconnectPeriod: 5000,
       connectTimeout: 30000,

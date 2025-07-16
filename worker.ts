@@ -44,10 +44,10 @@ function startMQTTClient() {
   console.log('Mencoba terhubung ke MQTT Broker...');
 
   // Perbaikan: Gunakan format URL langsung dan opsi yang lebih sederhana
-  const client = mqtt.connect('mqtts://567cd4585c3644309a303872a6601441.s1.eu.hivemq.cloud:8883', {
+  const client = mqtt.connect('', {
     clientId: `worker-server-${Math.random().toString(16).slice(2, 8)}`,
-    username: 'arduinoproject',
-    password: 'Arduino69#',
+    username: '',
+    password: '',
     rejectUnauthorized: false, // Nonaktifkan verifikasi sertifikat untuk mengatasi masalah TLS
     reconnectPeriod: 5000
   });
